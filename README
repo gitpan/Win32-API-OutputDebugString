@@ -1,0 +1,10 @@
+This is a trivial extension that supports the OutputDebugString
+Win32 API call. Trivial though it is, it appears nobody has ever thought
+of making it into a module, so I did.
+It is very bare, so if anybody has ideas on what else could benefit it,
+feel free to write.
+
+To take advantge of this, you'll need dbmon.exe or equivalent.
+
+Alessandro Forghieri
+March 23, 2001
