@@ -4,6 +4,11 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     'NAME'		=> 'Win32::API::OutputDebugString',
     'VERSION_FROM'	=> 'OutputDebugString.pm', # finds $VERSION
+    ($] ge '5.005')?
+	      (
+	       'AUTHOR'            => 'Alessandro Forghieri (alf@orion.it)',
+	       'ABSTRACT'          => 'OutputDebugString Win32 API support',
+	       ) : (),
     'PREREQ_PM'		=> {}, # e.g., Module::Name => 1.1
     'LIBS'		=> [''], # e.g., '-lm'
     'DEFINE'		=> '', # e.g., '-DHAVE_SOMETHING'

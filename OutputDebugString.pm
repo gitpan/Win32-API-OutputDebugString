@@ -28,7 +28,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 our @EXPORT = qw(
 	
 );
-our $VERSION = '0.01';
+our $VERSION = '0.03';
 
 sub AUTOLOAD {
     # This AUTOLOAD is used to 'autoload' constants from the constant()
@@ -88,17 +88,23 @@ Win32::API::OutputDebugString - Perl wrapper for the OutputDebugString
 
 =head1 DESCRIPTION
 
-Wrapper for the OutputDebugString Win32 API. It contains two identical 
+Wrapper for the OutputDebugString Win32 API. 
+
+It contains two identical 
 functions (OutputDebugString and  DStr) which join their args an send them
-to the eponymous Win32 Api. DStr is meant to just save some typing. 
+to the eponymous Win32 Api. 
+
+DStr is meant to just save some typing. 
 
 =head2 EXPORT
 
 None by default.
 
 =head2 Exportable functions
-Win32::OutputDebugString::OutputDebugString 
-Win32::OutputDebugString::DStr
+
+Win32::API::OutputDebugString::OutputDebugString 
+
+Win32::API::OutputDebugString::DStr
 
 =head1 AUTHOR
 
